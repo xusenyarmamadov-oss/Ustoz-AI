@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilografiya | Ustoz AI</title>
+
+<style>
+body {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #172554,
+        #312e81
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+
+.container h1 {
+    background: linear-gradient(90deg, #67e8f9, #ffffff, #93c5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    justify-content: center;
+}
+
+.video-card {
+    background: rgba(255,255,255,.09);
+    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 18px;
+    margin: 20px 0;
+    color: white;
+}
+
+.video-card h3 {
+    color: white;
+    margin-bottom: 14px;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 14px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #1f6bff, #00b4ff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="index.html" class="back-btn">
+            ← Bosh sahifa
+        </a>
+
+        <h1>📱 Mobilografiya videodarslari</h1>
+
+        <p class="subtitle">
+            Telefon orqali professional video olishni o‘rganing!
+        </p>
+
+        <div id="videos"></div>
+
+    </div>
+
+    <script>
+        const videos = [
+            "A8lJcAlP6RI",
+            "Rg5vfCx9Mmo",
+            "BpEjJnimZWA",
+            "6rjL2fYnDGs"
+        ];
+
+        const box = document.getElementById("videos");
+
+        videos.forEach((id, index) => {
+            box.innerHTML += `
+                <div class="video-card">
+                    <h3>📸 Mobilografiya dars #${index + 1}</h3>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/${id}"
+                        title="Mobilografiya dars ${index + 1}"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            `;
+        });
+    </script>
+
+</body>
+</html>

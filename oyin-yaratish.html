@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'yin yaratish | Ustoz AI</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--tx);
+    transition: .3s;
+}
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f6bff;
+        }
+
+        .intro {
+            text-align: center;
+            color: #5b6b8c;
+            margin-bottom: 35px;
+        }
+
+        .video {
+    background: var(--card);
+    color: var(--tx);
+    padding: 14px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        h3 {
+            margin: 12px 0 4px;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .back {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 22px;
+            background: linear-gradient(135deg, #1f6bff, #00b4ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: .3s;
+            box-shadow: 0 5px 15px #1f6bff30;
+        }
+
+.back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #1f6bff45;
+}
+
+:root {
+    --bg: #eef4ff;
+    --tx: #0d1b3d;
+    --card: rgba(255,255,255,.85);
+}
+
+[data-t="dark"] {
+    --bg: #0b1220;
+    --tx: #eef4ff;
+    --card: #172338;
+}
+    </style>
+
+    
+</head>
+
+<body>
+<div class="container">
+
+    <a href="index.html" class="back">← Bosh sahifaga qaytish</a>
+    <h1>🎮 O'yin yaratish</h1>
+
+    <p class="intro">
+        O'z o'yinlaringizni yaratishni videodarslar orqali o'rganing!
+    </p>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/2CQTfqWu77w"
+        allowfullscreen></iframe>
+        <h3>🎬 1-dars</h3>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/sVb8i47hA8s"
+        allowfullscreen></iframe>
+        <h3>🎬 2-dars</h3>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/crOmoXAuzro"
+        allowfullscreen></iframe>
+        <h3>🎬 3-dars</h3>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/6ieh3sqIA58"
+        allowfullscreen></iframe>
+        <h3>🎬 4-dars</h3>
+    </div>
+
+
+
+<script>
+const theme = localStorage.getItem("theme");
+
+if (theme) {
+    document.documentElement.dataset.t =
+        JSON.parse(theme);
+}
+</script>
+</body>
+</html>

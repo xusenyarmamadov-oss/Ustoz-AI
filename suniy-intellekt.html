@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun’iy intellekt | Ustoz AI</title>
+
+    <style>
+        :root {
+            --bg: #eef4ff;
+            --tx: #0d1b3d;
+            --card: rgba(255,255,255,.85);
+        }
+
+        [data-t="dark"] {
+            --bg: #0b1220;
+            --tx: #eef4ff;
+            --card: #172338;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px 15px;
+            background: var(--bg);
+            color: var(--tx);
+            font-family: Arial, sans-serif;
+            transition: .3s;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 12px 20px;
+            background: linear-gradient(135deg,#1f6bff,#7048ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            opacity: .75;
+            margin-bottom: 30px;
+        }
+
+        .video {
+            background: var(--card);
+            padding: 15px;
+            border-radius: 18px;
+            margin-bottom: 22px;
+            box-shadow: 0 5px 20px #00000010;
+        }
+
+        .video h2 {
+            font-size: 19px;
+            margin: 5px 0 15px;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <a href="index.html" class="back">← Bosh sahifaga qaytish</a>
+
+    <h1>🤖 Sun’iy intellekt</h1>
+    <p class="intro">Sun’iy intellekt olamini videodarslar orqali o‘rganing!</p>
+
+    <div class="video">
+        <h2>1-dars. Sun’iy intellekt</h2>
+        <iframe src="https://www.youtube.com/embed/CPl5iufpQ6U" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <h2>2-dars. Sun’iy intellekt</h2>
+        <iframe src="https://www.youtube.com/embed/4LsM3qDOlfU" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <h2>3-dars. Sun’iy intellekt</h2>
+        <iframe src="https://www.youtube.com/embed/ks5qRIcls1I" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <h2>4-dars. Sun’iy intellekt</h2>
+        <iframe src="https://www.youtube.com/embed/tRRgZiqI1gs" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<script>
+const theme = localStorage.getItem("theme");
+if (theme) {
+    document.documentElement.dataset.t = JSON.parse(theme);
+}
+</script>
+
+</body>
+</html>

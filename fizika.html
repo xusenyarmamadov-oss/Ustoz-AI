@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ustoz AI — Fizika darslari</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            background:linear-gradient(135deg, #071b45, #123b78, #0878c9);;
+            color:aliceblue;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #5b6b8c;
+            margin-bottom: 30px;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 11px 18px;
+            background: #1f6bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+        }
+
+        .video {
+            background: linear-gradient(135deg, #0f172a, #172554, #312e81);;
+            padding: 12px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px #00000010;
+        }
+
+        .video h3 {
+            margin: 8px 0 14px;
+        }
+
+        .player {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .container h1 {
+    background: none;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <a href="index.html" class="back">← Orqaga</a>
+
+        <h1>⚛️ Fizika videodarslari</h1>
+        <p class="subtitle">Ustoz AI — Fizikani oson o‘rganing</p>
+
+        <div class="videos">
+
+            <div class="video">
+                <h3>Fizika dars #1</h3>
+                <div class="player">
+                    <iframe src="https://www.youtube.com/embed/C8wV3tzHwQM"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="video">
+                <h3>Fizika dars #2</h3>
+                <div class="player">
+                    <iframe src="https://www.youtube.com/embed/Qt0-Wbab4Os"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="video">
+                <h3>Fizika dars #3</h3>
+                <div class="player">
+                    <iframe src="https://www.youtube.com/embed/aBl1msRI_1U"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="video">
+                <h3>Fizika dars #4</h3>
+                <div class="player">
+                    <iframe src="https://www.youtube.com/embed/6-_1vMsAKco"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
